@@ -15,5 +15,5 @@ puts "All stores' revenue: #{@all_revenue}"
 puts "Average Revenue: #{@avg_revenue}"
 
 # This doesn't work yet...
-@top_stores = Store.count(Store.where('annual_revenue >= 1000000'))
+@top_stores = Store.where('annual_revenue >= 1000000').count
 puts "$1M+ stores: #{@top_stores}"
